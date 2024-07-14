@@ -13,10 +13,10 @@
         "custom/media"
     ],
     "modules-center": [
-        "hyprland/window"
     ],
     "modules-right": [
-        "mpd",
+				"battery#bat0",
+				"battery#bat1",
         "idle_inhibitor",
         "pulseaudio",
         "network",
@@ -27,7 +27,6 @@
         "keyboard-state",
         "hyprland/language",
         "clock",
-        "tray"
     ],
     // Modules configuration
     // "hyprland/workspaces": {
@@ -129,7 +128,7 @@
     },
     "battery": {
         "states": {
-            // "good": 95,
+            "good": 95,
             "warning": 30,
             "critical": 15
         },
@@ -142,8 +141,38 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
-    "battery#bat2": {
-        "bat": "BAT2"
+    "battery#bat0": {
+        "bat": "BAT0",
+				"states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+
+    },
+		},
+    "battery#bat1": {
+        "bat": "BAT1",
+				"states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+
     },
     "power-profiles-daemon": {
       "format": "{icon}",

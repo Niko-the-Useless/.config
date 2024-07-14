@@ -4,9 +4,9 @@
     "light_dark": "dark",
     "lightness": 0.65,
     "color_align": {
-        "mode": "horizontal",
+        "mode": "vertical",
         "custom_colors": [],
-        "fore_back": null
+        "fore_back": []
     },
     "backend": "neofetch",
     "args": null,
